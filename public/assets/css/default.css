@@ -1,0 +1,113 @@
+.font-family {
+    font-family: Ubuntu, 'sans-serif';
+}
+.font-code {
+    font-family: monospace;
+}
+
+.full-body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+.full {
+    display: block;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+.full-h {
+    height: 100%;
+    min-height: 100vh;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center-y {
+    display: flex;
+    align-items: center;
+}
+.flex-center-x {
+    display: flex;
+    justify-content: center;
+}
+.flex-center-btw {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center-aro {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-center-eve {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-end {
+    display: flex;
+    justify-content: end;
+}
+.w-content {
+    width: fit-content;
+}
+.pointer {
+    cursor: pointer;
+}
+a.card-a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a.card-a:hover {
+    color: #e83232;
+}
+a.disabled{
+    pointer-events: none;
+    cursor: default;
+    color: #8f5f5f;
+    opacity: .5;
+}
+
+.media-img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+.mini-media-img {
+    height: 70px;
+}
+.dark-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0005;
+    opacity: 0;
+    transition-duration: .3s;
+}
+.dark-hover:hover {
+    opacity: 1;
+}
+.dark-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0005;
+}
+.rotate {
+    animation: rotate linear infinite 2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    100% {
+        transform: rotate(359deg);
+    }
+  }

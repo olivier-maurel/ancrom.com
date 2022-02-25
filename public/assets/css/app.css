@@ -1,0 +1,161 @@
+body {
+    color: #383d7c;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('/public/assets/img/bg/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*{
+    scroll-behavior: smooth !important;
+}
+.alt-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+.h-font {
+    /* font-family: sans-serif; */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b1b9de;
+    font-size: 1.8rem;
+    display: block;
+    letter-spacing: 1px;
+}
+.h-header {
+    font-size: 6.5rem; 
+    font-variant: all-small-caps;
+}
+.dat-com {
+    font-size: 1.4rem;
+    color: #12194f;
+}
+.h1-font {
+    font-size: 3.8rem;
+}
+.bg-custom-blue-1 {
+    background-color: #090f29;
+}
+.bg-custom-blue-2 {
+    /* background-color: #121737; */
+    background: linear-gradient(to left, #0d112b, #121737FD, #0d112b);
+}
+.bg-custom-blue-3 {
+    background-color: #27389f;
+}
+.text-custom-blue-1 {
+    color: #27389f;
+}
+.text-custom-blue-2 {
+    color: #383d7c;
+}
+.text-custom-h2 {
+    color: #b1b9de;
+}
+.text-custom-date {
+    color: #4f5bb1;
+}
+.text-custom-h1 {
+    color: #212c64;
+}
+.text-custom-muted-1 {
+    color: #121643;
+}
+.text-custom-muted-2 {
+    color: #303562;
+}
+a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #362491;
+}
+a:hover {
+    color: #4f5bb1;
+}
+.heart {
+    position: absolute;
+    top: 3px;
+    left: -1.3rem;
+}
+.block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.block div:nth-child(1) {
+    background: linear-gradient(-4.4deg, #0d112b 50%, transparent 0%);
+    height: 105px;
+    width: 65%;
+}
+.block div:nth-child(2) {
+    background: linear-gradient(8deg, #0d112b 50%, transparent 0%);
+    height: 105px;
+    width: 35%;
+}
+.progress-bar {
+    background-color: #2737a8;
+}
+.progress {
+    background-color: #12194f;
+}
+.accordion-style-05 .panel .panel-heading.active-accordion {
+    background-color: #090f29;
+    border-bottom-color: #090f29 !important;
+    padding-top: 35px;
+}
+.accordion-style-05 .panel .collapse.show, .accordion-style-05 .panel .collapsing {
+    background-color: #090f29;
+}
+.accordion-style-05 .panel .panel-body {
+    margin: 0 90px 0px 50px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+}
+.panel-heading .text-desc-accordion {
+    color: #353f7e !important;
+}
+.panel-heading.active-accordion span.text-success {
+    color: #428842 !important;
+}
+.panel-heading.active-accordion span.text-danger {
+    color: #c13f3f !important;
+}
+.panel-heading.active-accordion span.text-custom-date {
+    color: #364dc8 !important;
+}
+.panel-heading.active-accordion span.h-font {
+    color: #fffd;
+}
+.accordion-p {
+    line-height: 180%;
+    font-size: .97rem;
+    color: #6172b9;
+}
+
+.sticky.header-appear .header-dark, .sticky .header-dark.header-always-fixed-scroll {
+    background-color: #090f29 !important;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 10px 0;
+}
+.sticky .navbar.header-dark .navbar-nav .nav-link, .sticky .navbar.header-dark .header-search-icon > a, .sticky .navbar.header-dark .header-social-icon > a, .sticky .navbar.header-dark .header-cart-icon > a, .sticky .navbar.header-dark .header-language > a {
+    color: #505b8c !important;
+    font-weight: bold;
+}
+.navbar.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar.navbar-dark .header-search-icon > a:hover, .navbar.navbar-dark .header-social-icon > a:hover, .navbar.navbar-dark .header-cart-icon > a:hover, .navbar.navbar-dark .header-language > a:hover, .navbar.navbar-dark .header-language a > i > a:hover, .sticky .navbar-light.header-dark .navbar-nav .nav-link.active, .sticky .navbar-light.header-dark .navbar-nav .nav-link:hover, .sticky .navbar-light.header-dark .navbar-nav .nav-link:focus, .sticky .navbar-light.header-dark .header-search-icon > a:hover, .sticky .navbar-light.header-dark .header-social-icon > a:hover, .sticky .navbar-light.header-dark .header-cart-icon > a:hover, .sticky .navbar-light.header-dark .header-language > a:hover, .sticky .navbar-light.header-dark .header-language > a:hover, .top-bar.navbar-light .header-search-icon > a:hover, .top-bar.navbar-light .header-social-icon > a:hover, .top-bar.navbar-light .header-cart-icon > a:hover, .top-bar.navbar-light .header-language > a:hover, .top-bar.navbar-light .top-bar-contact-list > a:hover, .top-bar.navbar-light .header-language.dropdown-style-01 .btn:hover {
+    color: white !important;
+}
+.header-language {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header-language > a {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
