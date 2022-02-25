@@ -1,0 +1,57 @@
+<script>
+
+    console.log($('#send_email'));
+
+    $('#send_email').on('submit', function(e){
+        e.preventDefault();
+        let responseEmail = $('#response_email');
+
+        $(this).css({'opacity':'0', 'z-index':'-1'});
+        responseEmail.show().html(
+            $('<div>')
+                .addClass('spinner-border')
+                .append($('<span>').addClass('sr-only'))
+        );
+
+        $.post("{{ path('send_email') }}", {form: $(this).serialize()}, function(data){
+            
+            responseEmail.html(
+                $('<span>')
+                    .text(data.message)
+                    .addClass(data.class+' h-font text-center')
+            );
+            
+            if (data.success == true)
+                responseEmail.prepend(
+                    $('<i>')
+                        .addClass('fa fa-check text-success opacity-5 mb-5')
+                        .css('font-size', '4rem')
+                );
+            else
+                responseEmail.append(
+                    $('<button>')
+                        .addClass('btn btn-sm btn-round-edge btn-secondary mt-5')
+                        .text('Rééssayer')
+                        .attr({'id':'retry_email'})
+                ).prepend(
+                    $('<i>')
+                        .addClass('fa fa-times text-danger opacity-5 mb-5')
+                        .css('font-size', '4rem')
+                );
+                
+        });
+    });
+
+    $(document.body).on('click', '#retry_email', function(){
+        $('#send_email').css({'opacity':'1', 'z-index':'1'});
+        $('#response_email').hide();
+    });
+
+    function checkForm(form) {
+        $.each(form, function(i,v) {
+            if (v == '' | v == null)
+                return false;
+        });
+    }
+
+</script>

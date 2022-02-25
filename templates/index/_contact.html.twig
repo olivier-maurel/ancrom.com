@@ -1,0 +1,48 @@
+<section id="contact_section" class="big-section bg-custom-blue-2 wow" style="visibility: visible;">
+    <div class="flex-center mb-5">
+        <a href="#experience_section" class="btn btn-md bg-custom-blue-1 text-light btn-rounded m-auto opacity-3">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center margin-six-bottom">
+                <h3 class="h-font h1-font text-custom-h1 opacity-5">{{ 'Contact' | trans}}</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4 col-xl-5 col-lg-10 col-md-10">
+                <div class=" flex-center">
+                    <div class="text-center">
+                        <h6 class="alt-font margin-5-rem-top font-weight-300 text-light-gray text-center">{{ 'Get my CV' | trans }}</h6>
+                        <a href="" class="btn btn-success btn-round-edge"><i class="fa fa-download me-1"></i> {{ 'Download' | trans }}</a>
+                    </div>
+                    <div>
+                        <h6 class="alt-font margin-5-rem-top font-weight-300 text-light-gray text-center">{{ 'External links' | trans }}</h6>
+                        <div class="social-icon-style-10">
+                            <ul class="extra-small-icon light text-center">
+                                <li><a class="github mx-2" href="http://www.github.com" target="_blank"><i class="fab fa-github h2"></i></a></li>
+                                <li><a class="linkedin mx-2" href="http://www.instagram.com" target="_blank"><i class="fab fa-linkedin h2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-xl-5 col-lg-10 col-md-10 position-relative">
+                <form id="send_email" method="post" action="" class="text-center">
+                    <input class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required" type="text" name="name" placeholder="{{ 'Your name' | trans}}">
+                    <input class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px required" type="email" name="email" placeholder="{{ 'Your email address' | trans}}">
+                    <input class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-25px-bottom border-radius-0px" type="tel" name="phone" placeholder="{{ 'Your phone number' | trans}}">
+                    <textarea class="input-border-bottom border-color-dark-white-transparent bg-transparent extra-large-input px-0 margin-35px-bottom border-radius-0px" name="message" rows="5" placeholder="{{ 'Your message' | trans}} ..."></textarea>
+                    <button class="btn btn-small btn-primary btn-round-edge mb-0 py-2 px-3" type="submit">
+                        <i class="fa fa-paper-plane me-1"></i> {{ 'Send' | trans }}
+                    </button>
+                    <div class="form-results d-none"></div>
+                </form>
+                <div id="response_email" class="h-100 w-100 flex-center flex-column position-absolute top-0 left-0" style="display: none;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

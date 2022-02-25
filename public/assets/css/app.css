@@ -1,6 +1,6 @@
 body {
     color: #383d7c;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu', Courier, monospace;
     background-image: url('/public/assets/img/bg/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
     scroll-behavior: smooth !important;
 }
 .alt-font {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu', Courier, monospace;
 }
 .h-font {
     /* font-family: sans-serif; */
@@ -158,4 +158,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer-dark {
+    background-color: #090f29 !important;
 }
