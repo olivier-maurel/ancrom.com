@@ -12,12 +12,25 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-12 col-lg-4 offset-lg-1 md-margin-5-rem-bottom">
-                <div class="margin-15px-bottom d-flex text-fast-blue alt-font"><span class="h-1px align-self-center margin-10px-right w-10 bg-fast-blue flex-shrink-0"></span><div class="media-body flex-grow-1">Accomplished skills</div></div>
-                <h5 class="text-light font-weight-500 alt-font d-block margin-25px-bottom">We are the agency behind the design</h5>
-                <p class="">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since.</p>
+            <div class="col-12 col-lg-5 md-margin-5-rem-bottom">
+                <div class="flex-center border-lr border-color-white-transparent py-5 bg-w-trans">
+                    <div class="flex-column flex-center">
+                        <img src="{{ asset('img/profile/profile.jpg') }}" class="img-profil">
+                        <div class="d-flex flex-column text-custom-blue-2 mt-4">
+                            <pre class="m-0">fullname  : <span class="alt-font text-custom-h2 font-weight-600 h5">Olivier Maurel</span></pre>
+                            <pre class="m-0">birthday  : <span class="alt-font text-custom-h2 font-weight-600 h6">21/02/1998</span></pre>
+                            <pre class="m-0">location  : <span class="alt-font text-custom-h2 font-weight-600 h6">Haute-Savoie (74)</span></pre>
+                            <pre class="m-0">email     : <span class="alt-font text-custom-h2 font-weight-600 h6">oliviermaurel@ancrom.com</span></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <div class="col-12 col-lg-7">
+                <h5 class="text-light font-weight-500 alt-font d-block margin-25px-bottom">{{ 'I\'m a PHP developer !' | trans }}</h5>
+                <p class="text-light opacity-5 my-5">{{ 'profilDescription' | trans }}</p>
+                <span class="alt-font text-custom-blue-1 text-center d-block">{{ 'whatILike' | trans }}</span>
+                <span class="h-font text-custom-h2 text-center d-block" style="font-size: medium;">{{ 'freeBeCreate' | trans }}</span>
+            </div>
         </div>
     </div>
     <div class="flex-center mt-5">

@@ -4,6 +4,9 @@
 .font-code {
     font-family: monospace;
 }
+.bg-w-trans {
+    background-color: #ffffff03;
+}
 
 .full-body {
     height: 100%;

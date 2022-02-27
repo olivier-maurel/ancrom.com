@@ -162,3 +162,20 @@ a:hover {
 .footer-dark {
     background-color: #090f29 !important;
 }
+.img-profil {
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+    opacity: .6;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #0001;
+}
+section.big-section {
+    padding: 80px 0;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

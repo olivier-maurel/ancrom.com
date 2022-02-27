@@ -6,6 +6,9 @@
         e.preventDefault();
         let responseEmail = $('#response_email');
 
+        if (checkForm($(this)) !== true)
+            return;
+
         $(this).css({'opacity':'0', 'z-index':'-1'});
         responseEmail.show().html(
             $('<div>')
@@ -47,11 +50,26 @@
         $('#response_email').hide();
     });
 
+    //
+    // Check the contact form
+    //
     function checkForm(form) {
-        $.each(form, function(i,v) {
-            if (v == '' | v == null)
-                return false;
+        let empty = 0;
+
+        $.each(form.serializeArray(), function(i,v) {
+            if (v.name != 'phone' && (v.value == '' || v.value == null)) {
+                if ($('input[name='+v.name+']') != undefined)
+                    $('input[name='+v.name+']').addClass('error');
+                if ($('textarea[name='+v.name+']') != undefined)
+                    $('textarea[name='+v.name+']').addClass('error');
+                empty++;
+            }
         });
+
+        if (empty > 0)
+            return false;
+
+        return true;
     }
 
 </script>

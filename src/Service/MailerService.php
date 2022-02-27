@@ -19,8 +19,10 @@ class MailerService
      */
     public function sendEmail(array $form, $sender, $recipient)
     {
-        try {
+        if (!$this->formVerify($form))
+            return false;
 
+        try {
             $email = (new Email())
                 ->from($sender)
                 ->to($recipient)
@@ -33,11 +35,17 @@ class MailerService
                 ))
             ;
             $this->mailer->send($email);
-
             return true;
-
         } catch (\Throwable $th) {
             return false;
         }
+    }
+
+    private function formVerify(array $form)
+    {
+        foreach ($form as $key => $value)
+            if (is_null($value) && $key != 'phone')
+                return false;
+        return true;
     }
 }
