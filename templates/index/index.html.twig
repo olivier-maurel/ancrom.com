@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello IndexController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 <section id="header_section" class="big-section parallax p-0" data-parallax-background-ratio="0.8" style="background-image: url({{ asset('img/bg/header.jpg') }}); background-position: 80% 0px;">
@@ -8,13 +8,13 @@
         <div class="row full-screen md-h-650px sm-h-550px xs-h-450px" style="height: 968px;">
             <div class="col-12 col-md-12 col-sm-12 flex-center-y flex-center-eve flex-column padding-8-rem-tb">
                 <div>
-                    <h1 class="h-font text-center h-header font-weight-600 text-primary" style="line-height: 50%;">ancrom<span class="dat-com">.com</span></h1>
+                    <h1 class="h-font text-center h-header font-weight-600 text-primary mb-0" style="line-height: 25%;">ancrom<span class="dat-com">.com</span></h1>
                     <small class="h-font h-header font-weight-600 text-custom-h2" style="font-size: 1.4rem; line-height: 120%;">
-                        {{ 'It\'s a personal website of' | trans }} Olivier Maurel<br>
-                        <span style="font-size: 3.4rem;">{{ 'Welcome in my boat' | trans }}!</span>
+                        {{ 'It\'s a personal website of' | trans }}<br>
+                        <span style="font-size: 3.4rem;">Olivier Maurel</span>
                     </small>
                 </div>
-                <div class="row w-75">
+                <div class="row w-75 choice-header">
                     <div class="col-lg-5 flex-center flex-column">
                         <a href="#profil_section" class="btn m-auto btn-link btn-extra-large text-white d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr"><i class="fa fa-user me-2"></i>{{ 'Check my profile' | trans }}</a>
                         <small class="d-block text-custom-h1">Olivier Maurel</small>

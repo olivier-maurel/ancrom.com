@@ -30,7 +30,7 @@
                                     <a href="{{ path('change_locale', {'locale': code}) }}" title="{{ code }}">
                                         <span class="icon-country">
                                             <img src="{{ asset('img/lang/'~code~'.png') }}" alt="{{ code }}">
-                                        </span>{{ code | upper}}
+                                        </span>{{ code | trans }}
                                     </a>
                                 </li>
                             {% endif %}

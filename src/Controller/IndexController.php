@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use App\Service\MailerService;
 
 class IndexController extends AbstractController
@@ -34,7 +35,7 @@ class IndexController extends AbstractController
     /**
      * @Route("/send_email", name="send_email")
      */
-    public function sendEmail(Request $request, MailerService $mailerService)
+    public function sendEmail(Request $request, MailerService $mailerService, TranslatorInterface $translator)
     {
         parse_str($request->request->get('form'), $form);
 
@@ -43,9 +44,11 @@ class IndexController extends AbstractController
             $this->getParameter('mailer.recipient')
         );
 
+        $message = ($mailer === true) ? $translator->trans('Your message has been send') : $translator->trans('A problem has occurred');
+
         return new JsonResponse([
             'success' => $mailer,
-            'message' => ($mailer === true) ? 'Votre message a bien été envoyé!' : 'Un problème est survenu!',
+            'message' => $message,
             'class'   => ($mailer === true) ? 'text-success' : 'text-danger'
         ]);
     }

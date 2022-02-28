@@ -1,3 +1,15 @@
+fr: Français
 profilDescription: Passionate about computers from a very young age, I converted to the field of web development. This is for me much more than a profession because it animates me with a growing passion. I like to spend my free time experimenting and learning new languages.
 whatILike: What I like about computer code is
 freeBeCreate: the freedom to be creative.
+
+# EXPERIENCE
+hypercommDesc: SaaS application for marketing data management 
+hypercommXp: Development of various modules within the platform (FAQ, usage statistics, collection of logs), debugging and corrections in front-end and back-end, creation of digital visuals, writing of help pages and technical support for the platform.
+clikenwebDesc: SEO application
+clikenwebXp: Improvement of the company's internal application. Automatic sending of invoices due dates, management of electronic signatures with DocuSign, automated publication of articles with the Facebook API, many minor improvements and bug fixes.
+
+# EDUCATION
+3waEducation: Certifying training equivalent to BAC+2 in order to obtain the title of Developer Integrator of web and webmobile applications in four months. Basic learning of web languages and creation of a final project to validate the certification. 
+42Education: Intensive learning of the C language (7 days a week) for four weeks. Very enriching and motivating experience. This period confirmed my passion for IT development.
+DigitalCampusEducation: Certifying training equivalent to BAC+3 in order to obtain the title of Administrator of secure infrastructures. Always topical and in evening classes, this training allows me to broaden my knowledge in the computer field.

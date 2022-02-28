@@ -2990,9 +2990,9 @@
     /* header transparent */
     .navbar.bg-transparent { background-color: #fff!important; }
     .navbar.navbar-dark .header-social-icon, .sticky .navbar.header-dark .header-social-icon { border-color: rgba(0,0,0,.45); }
-    .navbar.navbar-dark.bg-transparent .navbar-nav .nav-link, .navbar.navbar-dark.bg-transparent .header-search-icon > a, .navbar.navbar-dark.bg-transparent .header-social-icon > a, .navbar.navbar-dark.bg-transparent .header-cart-icon > a, .navbar.navbar-dark.bg-transparent .header-language > a, .navbar.navbar-dark .nav-bar-contact { color: #232323 !important;}
+    .navbar.navbar-dark.bg-transparent .navbar-nav .nav-link, .navbar.navbar-dark.bg-transparent .header-search-icon > a, .navbar.navbar-dark.bg-transparent .header-social-icon > a, .navbar.navbar-dark.bg-transparent .header-cart-icon > a, .navbar.navbar-dark.bg-transparent .header-language > a, .navbar.navbar-dark .nav-bar-contact { color: #fffd !important;}
     header.sticky .navbar.navbar-dark.bg-transparent.header-dark .header-social-icon > a { color: #fff !important;}
-    .navbar.navbar-dark.bg-transparent .header-search-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-social-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-cart-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-language > a:hover, .sticky .navbar-dark.bg-transparent .header-search-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-social-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-cart-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-language > a:hover { color: rgba(0,0,0,.6) !important;}
+    .navbar.navbar-dark.bg-transparent .header-search-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-social-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-cart-icon > a:hover, .navbar.navbar-dark.bg-transparent .header-language > a:hover, .sticky .navbar-dark.bg-transparent .header-search-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-social-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-cart-icon > a:hover, .sticky .navbar-dark.bg-transparent .header-language > a:hover { color: white !important;}
     .navbar.bg-transparent .header-button .btn.btn-white { background: #232323; border-color: #232323; color: #ffffff;}
 
     /* menu classic */
@@ -7953,6 +7953,11 @@
 
     /* split portfolio */
     .home-split-portfolio .title-large { font-size: 45px; line-height: 40px; }
+
+    /* custom */
+    .accordion-style-05 .panel .panel-body { margin: 0 40px 0 40px; padding: 20px 0;}
+    .panel-title .h-font { font-size: 1.6rem;}
+    .chevron-slide, .choice-header { display: none; }
 }
 
 @media screen and (max-width: 480px) {

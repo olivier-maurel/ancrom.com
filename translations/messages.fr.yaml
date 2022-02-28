@@ -1,3 +1,4 @@
+en: English
 It's a personal website of: C'est le site web personnel de
 Welcome in my boat: Bienvenue à bord
 Check my profile: Voir mon profil
@@ -9,6 +10,7 @@ Skills: Compétences
 Education: Formations
 Experience: Expériences
 Contact: Contact
+Developed by: Développé par
 
 # PROFILE
 I'm a PHP developer !: Je suis un développeur PHP !
@@ -20,11 +22,21 @@ freeBeCreate: c'est la liberté d'être créatif.
 Administrator of secure infrastructures: Administrateur d'infrastructures sécurisées
 The piscine at 42: La piscine à 42
 Web application developer: Développeur d'application web
+3waEducation: Formation certifiante équivalent au BAC+2 dans le but d'obtenir le titre de Développeur Intégrateur d'applications web et webmobile en quatre mois. Apprentissage de base des langages web et création d'un projet final pour valider la certification.
+42Education: Apprentissage intensive du langage C (7/7j) pendant quatre semaines. Expérience trés enrichissante et motivante. Cette période a permit de confirmer ma passion envers le développement informatique
+DigitalCampusEducation: Formation certifiante équivalent au BAC+3 dans le but d'obtenir le titre d'Administrateur d'infrastructures sécurisées. Toujours d'actualité et en cours du soir, cette formation me permet d'élargir mes connaissances dans le domaine informatique.
+Training certificate: Attestation de formation
+Certificate: Attestation
+RNCP title: Titre RNCP
 
 # EXPERIENCE
 Junior developer: Développeur junior
 Full-stack developer: Développeur full-stack
 month: mois
+hypercommDesc: Application SaaS de gestion de données marketing
+hypercommXp: Développement de différents modules au sein de la plateforme (FAQ, statistiques d'usages, collecte des logs), débugage et corrections en front-end et en back-end, création de visuels numériques, rédaction de pages d'aides et support technique de la plateforme.
+clikenwebDesc: Application de référencement naturel
+clikenwebXp: Amélioration de l'application interne de l'entreprise. Envoi automatique des factures d'échéances, gestion des signatures électroniques avec DocuSign, publications automatisées des articles avec l'API de Facebook, nombreuses améliorations mineures et corrections des bugs.
 
 # CONTACT
 Your name: Votre nom
@@ -35,3 +47,5 @@ Send: Envoyer
 Get my CV: Obtenir mon CV
 Download: Télécharger
 External links: Liens externes
+Your message has been send: Votre message a bien été envoyé
+A problem has occurred: Un problème est survenu 
